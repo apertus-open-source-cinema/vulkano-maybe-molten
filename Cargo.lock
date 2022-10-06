@@ -408,7 +408,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "vulkano-ash-molten"
+name = "vulkano_maybe_molten"
 version = "0.30.0"
 dependencies = [
  "ash 0.35.2+1.2.203",
