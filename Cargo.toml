@@ -1,0 +1,12 @@
+[package]
+name = "vulkano_maybe_molten"
+version = "0.30.0"
+edition = "2021"
+
+[dependencies]
+vulkano = "0.30.0"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+ash-molten = { version = "0.13.0", features = ["pre-built"] }
+ash_molten_version = {package = "ash", version = "0.35.2"}
+ash_vulkano_version = {package = "ash", version = "0.37.0"}
