@@ -12,10 +12,7 @@ impl NewMaybeMolten for Instance {
     ) -> Result<Arc<Instance>, InstanceCreationError> {
         #[cfg(not(target_os = "macos"))]
         {
-            Instance::new(vulkano::instance::InstanceCreateInfo {
-                enabled_extensions: extensions,
-                ..create_info
-            })
+            Instance::new(create_info)
         }
 
         #[cfg(target_os = "macos")]
