@@ -1,6 +1,13 @@
 [package]
 name = "vulkano_maybe_molten"
 version = "0.30.0"
+description = "Use vulkano-rs with ash-molten on macOS and without on other platforms"
+license = "MIT OR Apache-2.0"
+keywords = ["vulkan", "vulkano", "macOS", "metal", "moltenVK"]
+readme = "README.md"
+repository = "https://github.com/apertus-open-source-cinema/vulkano-maybe-molten/"
+authors = ["Jaro Habiger <jarohabiger@googlemail.com>"]
+
 edition = "2021"
 
 [dependencies]
